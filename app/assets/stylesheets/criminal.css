@@ -25,6 +25,7 @@ input {
 }
 
 
+
 a:visited { 
     color: whitesmoke;
 }
@@ -62,10 +63,24 @@ table {
 
 tr:hover {
     background-color: darkolivegreen;
-    
+
 }
 
 th, td {
     padding: 1px;
     text-align: left;
 }
+
+
+
+.photohead {
+    padding: 2px grey;
+    height: 300px;
+    width: 70%;
+}
+
+.listhead {
+    width: 200%;
+    position: relative;
+}
+

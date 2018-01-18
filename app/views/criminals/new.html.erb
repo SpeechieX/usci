@@ -12,6 +12,11 @@
     <% end %>
 
 <h1>New Entry</h1>
+ <div class="form-group">
+    <%= f.label :image %>
+    <%= f.file_field :image, class: 'form-control'%>
+  </div>
+    <%= f.submit 'Upload', class: 'btn btn-primary' %>
  <div class="field">
       <%= f.text_field :name, placeholder: 'enter name' %>
     </div>

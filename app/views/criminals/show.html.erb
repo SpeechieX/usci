@@ -1,2 +1,59 @@
+
+
+
 <h1>Criminal Profile</h1>
-<%= params[:id]%>
+
+
+<div class="photohead">
+    <%=render @criminal %>
+</div>
+
+<div class="listhead">
+<table>
+    <tr>
+        <th>SSN</th>
+        <td><%= @criminal.ssn%></td>
+    </tr>
+    <tr>
+        <th>NAME</th>
+        <td><%= @criminal.name%></td>
+    </tr>
+    <tr>
+        <th>ALIAS</th>
+        <td><%= @criminal.alias%></td>
+    </tr>
+    <tr>
+        <th>Date Of Birth</th>
+        <td><%= @criminal.dob%></td>
+    </tr>
+    <tr>
+        <th>SEX/GENDER</th>
+        <td><%= @criminal.sex%></td>
+    </tr>
+    <tr>
+        <th>BLOODTYPE</th>
+        <td><%= @criminal.bloodtype%></td>
+    </tr>
+    <tr>
+        <th>Eye Color</th>
+        <td><%= @criminal.eye_color%></td>
+    </tr>
+    <tr>
+        <th>Scars, Marks, Tattoos</th>
+        <td><%= @criminal.scars_marks_tattoos%></td>
+    </tr>
+    
+    </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -18,7 +18,7 @@ class CriminalsController < ApplicationController
             redirect_to criminals_path
             
         else
-            render :new
+            render :new 
         end
     end
 
@@ -29,7 +29,10 @@ class CriminalsController < ApplicationController
     end
 
     def destroy
+        @criminal = Criminal.find(params[:id])
         @criminal.destroy
+        flash[:success] = "The account was destroyed."
+        redirect_to criminals_path
     end
 
 
@@ -40,5 +43,5 @@ end
 private
 
 def criminal_params
-    params.require(:criminal).permit(:ssn,:name,:alias,:dob,:origin,:bloodtype,:scars_marks_tattoos,:eye_color,:sex,:crimes)
+    params.require(:criminal).permit(:ssn,:name,:alias,:dob,:origin,:bloodtype,:scars_marks_tattoos,:eye_color,:sex,:crimes,:image)
 end

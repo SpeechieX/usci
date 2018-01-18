@@ -1,0 +1,10 @@
+<div class="media">
+  <div class="media-left">
+    <%= link_to image_tag(criminal.image.url, class: 'media-object'), criminal.image.url, target: '_blank' %>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><%= criminal.name %></h4>
+  </div>
+</div>
+
+<%= link_to image_tag(criminal.image.url(:thumb), class: 'media-object'), criminal.image.url, target: '_blank' %>
