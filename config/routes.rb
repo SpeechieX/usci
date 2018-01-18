@@ -8,6 +8,5 @@ root 'operators#new'
   resources :sessions, only: [:new, :create, :destroy]
 
   get '/login', to: 'sessions#new'
-  get '/criminals/:id', to: 'criminals#edit'
   
 end

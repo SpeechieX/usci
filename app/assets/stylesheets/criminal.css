@@ -24,9 +24,11 @@ input {
     text-align: center;
 }
 
+.text-center {
+    text-align: center;
+}
 
-
-a:visited { 
+a:visited, a:active, a { 
     color: whitesmoke;
 }
 

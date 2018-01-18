@@ -28,6 +28,18 @@ class CriminalsController < ApplicationController
        @criminal = Criminal.new 
     end
 
+    
+    def edit
+        @criminal = Criminal.find(params[:id])
+    end
+        
+    
+    def update
+        @criminal = Criminal.find(params[:id])
+        @criminal.update_attributes(criminal_params)
+        redirect_to criminals_path
+    end
+    
     def destroy
         @criminal = Criminal.find(params[:id])
         @criminal.destroy

@@ -6,6 +6,7 @@
 <table>
     <thead>
         <tr>
+            <th></th>
             <th>SSN</th>
             <th>Name</th>
             <th>ALIAS</th>
@@ -16,23 +17,23 @@
             <th>EYE COLOR</th>
             <th>SCARS, MARKS, TATTOOS</th>
             <th>CASE STATUS</th>
+            <th></th>
         </tr>
     </thead>
 
     <tbody>
         <% @criminals.each do |criminal|%>
             <tr data-link="<%= criminals_path %>">
-                 <td><%= link_to 'Show', criminal %></td>
-                  <td><%= link_to 'Edit', edit_criminal_path(criminal) %></td>
-                <a href="#"><td><%= criminal.ssn %></td></a>
-                <a href="#"><td><%= criminal.name %></td></a>
-                <a href="#"><td><%= criminal.alias %></td></a>
-                <a href="#"><td><%= criminal.dob %></td></a>
-                <a href="#"><td><%= criminal.sex %></td></a>
-                <a href="#"><td><%= criminal.origin %></td></a>
-                <a href="#"><td><%= criminal.bloodtype %></td></a>
-                <a href="#"><td><%= criminal.eye_color %></td></a>
-                <a href="#"><td><%= criminal.scars_marks_tattoos %></td></a>
+                <td><%= link_to 'Show', criminal %> | <%= link_to 'Edit', edit_criminal_path(criminal) %></td>
+                <td><%= criminal.ssn %></td>
+                <td><%= criminal.name %></td>
+                <td><%= criminal.alias %></td>
+                <td><%= criminal.dob %></td>
+                <td><%= criminal.sex %></td>
+                <td><%= criminal.origin %></td>
+                <td class="text-center"><%= criminal.bloodtype %></td>
+                <td><%= criminal.eye_color %></td>
+                <td><%= criminal.scars_marks_tattoos %></td>
                 <% crime = criminal.crimes.find_by(case_closed: true) %>
                 <td>
                     <% if crime %>
@@ -41,9 +42,9 @@
                         Not Closed
                     <% end %>
                 </td> 
-        <td><%= link_to 'Destroy', criminal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                <td><%= link_to 'Destroy', criminal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </tr>
-      <% end %>
+        <% end %>
   </tbody>
 </table>
 
