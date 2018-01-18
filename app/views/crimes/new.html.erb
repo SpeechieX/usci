@@ -1,0 +1,38 @@
+<%= form_for @criminal do |f| %>
+  <% if @criminal.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% for message in @criminal.errors.full_messages %>
+          <li><%= message %></li>
+        <% end %>
+
+<div class="field">
+    <%= f.text_field :name, placeholder: 'enter name' %>
+</div>
+<div class="field">
+    <%= f.text_field :name, placeholder: 'enter name' %>
+</div>
+<div class="field">
+    <%= f.text_field :name, placeholder: 'enter name' %>
+</div>
+<div class="field">
+    <%= f.text_field :name, placeholder: 'enter name' %>
+</div>
+<div class="field">
+    <%= f.text_field :name, placeholder: 'enter name' %>
+</div>
+<div class="field">
+    <%= f.text_field :name, placeholder: 'enter name' %>
+</div>
+<div class="field">
+    <%= f.text_field :name, placeholder: 'enter name' %>
+</div>
+<div class="field">
+    <%= f.text_field :name, placeholder: 'enter name' %>
+</div>
+<div class="field">
+    <%= f.text_field :name, placeholder: 'enter name' %>
+</div>
+<div class="actions" align="center" margin="5px"><%= f.submit %></div>
+<% end %>

@@ -1,0 +1,17 @@
+<table>
+    <tbody>
+        <% @crimes.each do |crime|%>
+            <tr>
+                <td><%= crime.charge%></td>
+                <td><%= crime.date_of_charge%></td>
+                <td><%= crime.victim%></td>
+                <td><%= crime.case_closed%></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+
+
+
+
+

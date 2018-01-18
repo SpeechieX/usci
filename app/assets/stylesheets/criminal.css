@@ -1,0 +1,71 @@
+.info {
+    align-content: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: rgb(49, 214, 27);
+    align-content: center;
+    font-family: 'Cutive Mono', monospace;
+    text-align: center;
+}
+
+input {
+    display: inline-block;
+    background-color: black;
+    color: rgb(49, 214, 27);
+    border-color: rgb(49, 214, 27);
+    padding: 10px;
+    margin: 9px;
+    font-family: 'Cutive Mono', monospace;
+    text-align: center;
+}
+
+
+a:visited { 
+    color: whitesmoke;
+}
+
+h1 {
+    align-content: center;
+}
+
+label{
+    width: 15em;
+    display: inline-block;
+    line-height: 0;
+  }
+
+  div.submit {
+      display: block;
+      float: left;
+      margin-right: 0;
+  }
+
+
+
+
+tr:nth-child(even) {
+    background-color: #2b2b2b;
+}
+
+table {
+    border-bottom: 1px grey;
+    margin: 0 auto;
+    display: block;
+    width: 1200px;
+    padding-bottom: 15px;
+}
+
+tr:hover {
+    background-color: darkolivegreen;
+    
+}
+
+th, td {
+    padding: 1px;
+    text-align: left;
+}

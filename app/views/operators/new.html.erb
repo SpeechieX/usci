@@ -1,0 +1,32 @@
+  <div class="container">
+<h1 align="center">Sign Up</h1>
+<%= form_for @operator do |f| %>
+  <% if @operator.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% for message in @operator.errors.full_messages %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <div class="field">
+      <%= f.label :name%>
+      <%= f.text_field :name, placeholder: 'enter name' %>
+    </div>
+    <div class="field">
+      <%= f.label :email %>
+      <%= f.text_field :email, placeholder: 'enter email' %>
+    </div>
+    <div class="field">
+      <%= f.label :agency%>
+      <%= f.password_field :agency, placeholder: 'enter agency' %>
+    </div>  
+    <div class="field">
+      <%= f.label :password %>
+      <%= f.password_field :password, placeholder: 'enter password' %>
+    </div>
+    <div class="actions" align="center" margin="5px"><%= f.submit "Create Account"%></div>
+  </div>
+<% end %>
