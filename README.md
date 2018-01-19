@@ -1,4 +1,6 @@
-#USCI DATABASE
+# USCI DATABASE
+
+## Features
 
 - Create a User and Sign Up/Login with Proper Creditials to Gain Access.
 - Create and Edit Criminals in the Database as you see fit.
