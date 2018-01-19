@@ -21,12 +21,15 @@
     </div>
     <div class="field">
       <%= f.label :agency%>
-      <%= f.password_field :agency, placeholder: 'enter agency' %>
+      <%= f.text_field :agency, placeholder: 'enter agency' %>
     </div>  
     <div class="field">
       <%= f.label :password %>
       <%= f.password_field :password, placeholder: 'enter password' %>
     </div>
-    <div class="actions" align="center" margin="5px"><%= f.submit "Create Account"%></div>
-  </div>
+    <div id="creAcct">
+      <div class="actions" align="center" margin="5px"><%= f.submit "Create Account"%></div>
+      </div>
+    </div>
+  
 <% end %>

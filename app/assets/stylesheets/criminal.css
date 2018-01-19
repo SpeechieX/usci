@@ -55,8 +55,6 @@ label{
 
 
 
-tr:nth-child(odd) {
-}
 
 tr:nth-child(even) {
     background-color: #2b2b2b;
@@ -109,6 +107,10 @@ th, td {
     bottom: 230px;
 }
 
+.front {
+    z-index: 1000;
+}
+
 
 
 /* MODAL EDIT SECTION */
@@ -117,7 +119,6 @@ th, td {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -131,11 +132,11 @@ th, td {
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    background-color: #000000;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    border: 1px solid rgb(9, 255, 173);
+    width: 70%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */

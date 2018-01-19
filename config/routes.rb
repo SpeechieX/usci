@@ -9,4 +9,5 @@ root 'operators#new'
 
   get '/login', to: 'sessions#new'
   
+  get '/confirmed', to: 'sessions#confirmed'
 end

@@ -1,24 +1,15 @@
-# README
+USCI DATABASE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Create a User and Sign Up/Login with Proper Creditials to Gain Access.
+- Create and Edit Criminals in the Database as you see fit.
+- Strong Params : No Entry Without Creditials 
+- Operators Can Destroy Case Files in one click.
 
-Things you may want to cover:
 
-* Ruby version
+<img src="https://i.imgur.com/6xi2yBF.png" align="center">
+<img src="https://i.imgur.com/nhyl9ok.png" align="center">
+<img src="https://i.imgur.com/oA5SBDn.png" align="center">
 
-* System dependencies
+MADE WITH RUBY ON RAILS, JAVASCRIPT, CSS and HTML.
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

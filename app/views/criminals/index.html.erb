@@ -24,7 +24,7 @@
     <tbody>
         <% @criminals.each do |criminal|%>
             <tr data-link="<%= criminal_path(criminal) %>">
-                <td><%= link_to 'Show', criminal %> | <%= link_to 'Edit', edit_criminal_path(criminal) %></td>
+                <td><%= link_to 'Show', criminal_path(criminal), class: "front" %> | <%= link_to 'Edit', edit_criminal_path(criminal), class: "front" %></td>
                 <td><%= criminal.ssn %></td>
                 <td><%= criminal.name %></td>
                 <td><%= criminal.alias %></td>
@@ -56,8 +56,8 @@
 <script>
     var trs = document.querySelectorAll("tr[data-link]");
     trs.forEach(function(tr) {
-        tr.addEventListener("click", function(){
-            window.location = this.getAttribute("data-link");
+        tr.addEventListener("click", function({target}){
+            if (target.tagName !== 'A') window.location = this.getAttribute("data-link");
         });
     });
 </script>

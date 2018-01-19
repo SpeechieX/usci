@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
         # Successful log in!
         session[:operator_id] = operator.id
         # notice: is a special flash[:notice] accessor
-        redirect_to criminals_path, notice: 'Logged in!'
+        redirect_to confirmed_path, notice: 'Logged in!'
       else
         # flash.now is used for messaging
         # during the CURRENT request
@@ -26,5 +26,8 @@ class SessionsController < ApplicationController
     def destroy
       session[:operator_id] = nil
       redirect_to root_path, notice: "Logged out!"
+    end
+
+    def confirmed 
     end
 end
