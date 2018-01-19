@@ -9,6 +9,11 @@ USCI DATABASE
 <img src="https://i.imgur.com/nhyl9ok.png" align="center">
 <img src="https://i.imgur.com/oA5SBDn.png" align="center">
 
-MADE WITH RUBY ON RAILS, JAVASCRIPT, CSS and HTML.
+MADE WITH RUBY, RUBY ON RAILS, JAVASCRIPT, CSS and HTML.
+
+TRELLO : <a href="https://trello.com/b/lJn9iazf/wdi-project-2-ci-database">CLICK HERE</a>
+
+HEROKU DEPLOYED APP : <a href="https://usci.herokuapp.com/">CLICK HERE</a>
+
 
 
