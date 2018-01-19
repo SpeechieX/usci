@@ -12,23 +12,25 @@
     <% end %>
 
 <h1>New Entry</h1>
+ <div class="u1">
+    <div class="field">
+          <%= f.text_field :name, placeholder: 'enter name' %>
+        </div>
+        <div class="field">
+          <%= f.text_field :ssn, placeholder: 'social security number' %>
+        </div>
+        <div class="field">
+          <%= f.text_field :alias, placeholder: 'enter alias' %>
+        </div>  
+        <div class="field">
+          <%= f.text_field :dob, placeholder: 'date of birth' %>
+        </div>
  <div class="form-group">
-    <%= f.label :image %>
-    <%= f.file_field :image, class: 'form-control'%>
-  </div>
-    <%= f.submit 'Upload', class: 'btn btn-primary' %>
- <div class="field">
-      <%= f.text_field :name, placeholder: 'enter name' %>
+        <%= f.label :image %>
+        <%= f.file_field :image, class: 'form-control'%>
+      </div>
     </div>
-    <div class="field">
-      <%= f.text_field :ssn, placeholder: 'social security number' %>
-    </div>
-    <div class="field">
-      <%= f.text_field :alias, placeholder: 'enter alias' %>
-    </div>  
-    <div class="field">
-      <%= f.text_field :dob, placeholder: 'date of birth' %>
-    </div>
+<div class="u2">
     <div class="field">
       <%= f.text_field :sex, placeholder: 'sex/gender' %>
     </div>
@@ -44,6 +46,7 @@
     <div class="field">
       <%= f.text_field :scars_marks_tattoos, placeholder: 'add description' %>
     </div>
+</div>
 
      <div class="actions" align="center" margin="5px"><%= f.submit %></div>
 
