@@ -9,6 +9,12 @@
 <img src="https://i.imgur.com/nhyl9ok.png" align="center">
 <img src="https://i.imgur.com/oA5SBDn.png" align="center">
 
+
+## Future Upgrades(ICE BOX)
+- AAU I would like to be able to search the database by visual traits of suspects and return an array of photos from profiles containing those attributes.
+- AAU that is admin I want to create a username system by generating a varchar(6) id system to enable secure access with password authentication.
+- AAU I want to create a search/sort option based on certain requested attributes.
+
 ## Made With
 MADE WITH RUBY, RUBY ON RAILS, JAVASCRIPT, CSS and HTML.
 
