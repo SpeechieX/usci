@@ -1,4 +1,4 @@
-USCI DATABASE
+<h1>USCI DATABASE<h1>
 
 - Create a User and Sign Up/Login with Proper Creditials to Gain Access.
 - Create and Edit Criminals in the Database as you see fit.
